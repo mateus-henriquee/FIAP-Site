@@ -1,5 +1,4 @@
 footer {
-    position: block;
     font-family: var(--fonteTitulo);
     background: linear-gradient(to right, #01131f 0%, #000 50%, #01131f 100%);
     line-height: 1.6;
