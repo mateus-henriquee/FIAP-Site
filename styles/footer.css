@@ -1,0 +1,128 @@
+footer {
+    position: block;
+    font-family: var(--fonteTitulo);
+    background: linear-gradient(to right, #01131f 0%, #000 50%, #01131f 100%);
+    line-height: 1.6;
+    padding: 5em;
+}
+
+.footer-title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--textoComumColor);
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+h2 {
+    font-size: 2rem;
+    color: url(--tituloColor);
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.faq-itens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em;
+    width: 90%;
+}
+
+.faq-item {
+  border-top: 2px solid #333;
+  padding: 20px 0;
+}
+
+.faq-header {
+  display: flex;
+  color: var(--textoComumColor);
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.faq-header:hover {
+  color: var(--tituloColor);
+}
+
+.faq-header span {
+  color: #e60073;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  color: var(--textoComumColor);
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.faq-item.open .faq-content {
+  max-height: 600px;
+}
+
+.faq-item.open .faq-header span {
+  transform: rotate(45deg);
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cta h3 {
+  color: var(--textoComumColor);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 14px 34px;
+  border: 2px solid var(--tituloColor);
+  border-radius: 0.2em;
+  color: var(--tituloColor);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+ 
+.cta a:hover {
+  background-color: var(--tituloColor);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .faq-header {
+    font-size: 0.85rem;
+    flex-direction: row;
+  }
+  .cta h3 {
+    font-size: 1.5rem;
+  }
+  .cta a {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}

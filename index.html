@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/variaveis.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/div.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <img src="/assets/img/FIAP.svg" class="logo-fiap" alt="Logo FIAP">
+    </header>
+
+    <main>
+        <div class="main-itens">
+            <h1 class="titulo1"> A MAIOR FACULDADE </h1>
+            <h1 class="titulo2"> DE TECNOLOGIA </h1>
+            <p> Referência em tecnologia e inovação no Brasil, a FIAP é uma faculdade que prepara profissionais para o
+                futuro, com um ensino prático, professores atuantes no mercado e desafios reais que conectam os alunos
+                às
+                grandes empresas </p>
+        </div>
+    </main>
+
+    <div class="img-bg"></div>
+
+    <footer>
+        <div class="footer-title">NOSSA ESTRUTURA</div>
+        <div class="faq-itens">
+            <div class="faq-item">
+                <div class="faq-header">
+                    CONEXÃO O MERCADO DE TRABALHO
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Texto explicativo sobre a conexão com o mercado de trabalho.</p>
+                </div>
+            </div>
+
+            <div class="faq-item open">
+                <div class="faq-header">
+                    APRENDIZADO IMERSIVO
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Outro diferencial da FIAP é a sua estrutura moderna, pensada para proporcionar uma experiência de
+                        aprendizado imersiva e eficiente. Os laboratórios contam com recursos atualizados e de ponta,
+                        simulando ambientes reais do mercado de trabalho. Além disso, os alunos têm à disposição
+                        ferramentas e tecnologias atuais, permitindo que explorem, na prática, tudo o que aprendem.
+                        Esses diferenciais garantem uma formação completa, com alto índice de empregabilidade e um
+                        posicionamento de destaque frente às exigências das empresas do setor, preparando os alunos para
+                        um cotidiano que evolui intensamente ao longo da carreira.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    ENSINO PERSONALIZADO
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Texto explicativo sobre ensino personalizado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    INOVAÇÃO E TRANSFORMAÇÃO
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Texto explicativo sobre inovação e transformação.</p>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3>QUER SABER MAIS?</h3>
+                <a href="#contato">ENTRE EM CONTATO</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-header');
+            header.addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
