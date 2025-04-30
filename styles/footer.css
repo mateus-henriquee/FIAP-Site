@@ -105,7 +105,7 @@ h2 {
  
 .cta a:hover {
   background-color: var(--tituloColor);
-  color: #ffffff;
+  color: #000;
 }
 
 @media (max-width: 768px) {

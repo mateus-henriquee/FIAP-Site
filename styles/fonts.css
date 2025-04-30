@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'GothamHTF';
-    font-weight: 900; /* Black */
+    font-weight: 900;
     src: url('/assets/fonts/gotham/GothamHTF-Black.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'GothamHTF';
-    font-weight: bold; /* Bold */
+    font-weight: bold;
     src: url('/assets/fonts/gotham/GothamHTF-Bold.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'GothamHTF';
-    font-weight: normal; /* Regular */
+    font-weight: normal;
     src: url('/assets/fonts/gotham/GothamHTF-Medium.otf') format('opentype');
   }

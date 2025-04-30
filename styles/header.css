@@ -5,4 +5,17 @@ header {
     justify-content: center;
     padding: 1em;
     width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+#progress-bar {
+    position: fixed;
+    top: calc(1.2em + 2em);
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background-color: var(--tituloColor);
+    z-index: 5;
+    transition: width 0.1s ease-out;
 }
