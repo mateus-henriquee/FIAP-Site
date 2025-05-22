@@ -7,7 +7,22 @@ header {
     width: 100%;
     position: fixed;
     z-index: 5;
+    transition: height 0.3s ease-out;
 }
+
+.logo-fiap {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    max-height: 100%;
+    width: auto;
+  }
+  
+  .header-scrolled {
+    height: 0.8em;
+  }
+  
+  .header-scrolled .logo-fiap {
+    transform: scale(0.8);
+  }
 
 #progress-bar {
     position: fixed;
