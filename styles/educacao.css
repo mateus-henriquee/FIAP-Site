@@ -30,7 +30,8 @@
 
 .educacao-div-dir {
   flex: 0.9;
-  max-width: 35%;
+  height: 100%;
+  padding: -1em;
   align-self: center;
 }
 
@@ -181,4 +182,9 @@
     display: block;
     opacity: 1;
     animation: fadeIn 0.3s ease-in-out;
+  }
+
+  #scrollTopBtn:hover {
+    transition: all 0.5;
+    box-shadow: var(--tituloColor) 0px 5px 15px;
   }

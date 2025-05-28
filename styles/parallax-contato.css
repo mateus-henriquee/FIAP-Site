@@ -1,0 +1,10 @@
+.img-bg {
+    background-image: url(../contato/assets/img/bg-parallax.jpg);
+    background-position: center;
+    filter: brightness(0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30em;
+  }

@@ -16,10 +16,6 @@ header {
     width: auto;
   }
   
-  .header-scrolled {
-    height: 0.8em;
-  }
-  
   .header-scrolled .logo-fiap {
     transform: scale(0.8);
   }
