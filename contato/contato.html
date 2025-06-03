@@ -8,19 +8,79 @@
     <link rel="shortcut icon" href="/assets/img/FIAP.svg" type="image/x-icon">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/variaveis.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/contato.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/parallax-contato.css">
+    <link rel="stylesheet" href="/styles/form-contato.css">
 </head>
 
 <body>
     <header>
-        <img src="/assets/img/FIAP.svg" class="logo-fiap" alt="Logo FIAP">
+        <a href="/index.html"><img src="/assets/img/FIAP.svg" class="logo-fiap" alt="Logo FIAP"></a>
     </header>
     <div id="progress-bar"></div>
 
     <div class="img-bg"></div>
 
-
+    <div class="container">
+        <div class="contact-info">
+            <h1>ENVIE SUA MENSAGEM</h1>
+            <p>Entre em contato com a equipe FIAP através do nosso e-mail ou preenchendo o formulário de contato ao lado.</p>
+            <a href="mailto:contato@fiap.com.br" class="email">contato@fiap.com.br</a>
+        </div>
+        
+        <div class="contact-form">
+            <h1>FORMULÁRIO DE MENSAGENS ONLINE</h1>
+            
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" class="required">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="name-error">Por favor, insira seu nome</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="required">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error">Por favor, insira um email válido</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="domain">Domínio (Se possuir)</label>
+                    <input type="text" id="domain" name="domain">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="required">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="error-message" id="message-error">Por favor, insira sua mensagem</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject" class="required">Selecione</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="cursos">Cursos</option>
+                        <option value="admissao">Admissão</option>
+                        <option value="parcerias">Parcerias</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <div class="error-message" id="subject-error">Por favor, selecione um assunto</div>
+                </div>
+                
+                <div class="human-check">
+                    <input type="checkbox" id="human" name="human" required>
+                    <label for="human">Sou humano</label>
+                </div>
+                
+                <p class="note">Desculpe, temos de perguntar novamente ...</p>
+                
+                <button type="submit" class="submit-btn">ENVIAR</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

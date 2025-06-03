@@ -15,18 +15,23 @@ header {
     max-height: 100%;
     width: auto;
   }
+
+#img-logo:hover {
+  transition: ease-in-out 0.7s; 
+  transform: none;
+}
   
   .header-scrolled .logo-fiap {
     transform: scale(0.8);
   }
 
 #progress-bar {
-    position: fixed;
-    top: calc(1.2em + 2em);
-    left: 0;
-    height: 4px;
-    width: 0%;
-    background-color: var(--tituloColor);
-    z-index: 5;
-    transition: width 0.1s ease-out;
+  position: fixed;
+  top: calc(1.2em + 2em);
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background-color: var(--tituloColor);
+  z-index: 5;
+  transition: width 0.1s ease-out;
 }

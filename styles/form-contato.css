@@ -1,0 +1,229 @@
+.container {
+    color: #c0c0c0;
+    font-family: 'GothamHTF';
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    border: var(--tituloColor) 3px solid;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--tituloColor), #000000);
+    position: relative;
+}
+
+.contact-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="10" y="50" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.05)">FIAP</text></svg>');
+    opacity: 0.1;
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact-info h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--fiap-light);
+}
+
+.contact-info p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-info .email {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-info .email:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+}
+
+.contact-form h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #fff;
+    position: relative;
+    font-weight: 700;
+}
+
+.contact-form h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--fiap-primary);
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--tituloColor);
+    font-size: 14px;
+}
+
+.required::after {
+    content: " *";
+    color: var(--fiap-primary);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.3s;
+    background-color: var(--fiap-accent);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--fiap-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px #e31937;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.human-check {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.human-check input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: var(--fiap-primary);
+}
+
+.human-check label {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.note {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.submit-btn {
+    background-color: var(--fiap-primary);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--tituloColor);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #960e3b;
+}
+
+.error-message {
+    color: var(--fiap-primary);
+    font-size: 13px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .contact-info, .contact-form {
+        padding: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animação sutil */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-info, .contact-form {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.contact-form {
+    animation-delay: 0.2s;
+}
